@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.footer__message {
+  font-style: italic;
+}
+
+.footer__git {
+  margin-top: 1rem;
+}
