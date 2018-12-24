@@ -1,0 +1,14 @@
+@import './_variables.scss';
+
+.wave {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.wave svg {
+  position: absolute;
+  fill: $primary;
+  top: 0;
+  left: 0;
+}
