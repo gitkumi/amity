@@ -1,3 +1,24 @@
+@import './_variables.scss';
+
 .hero {
-  background-color: red;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25vh;
+}
+
+.hero__title {
+  color: $primary;
+  font-size: 38px;
+  margin-bottom: 1rem;
+}
+
+.hero__details {
+  color: $gray;
+  text-align: justify;
+  width: 40%;
+}
+
+.intro__button {
+
 }
