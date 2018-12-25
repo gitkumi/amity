@@ -4,9 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 
-  border-bottom: 10px solid $primary;
+  border-bottom: 1rem solid $primary;
 }
 
 .footer__message {

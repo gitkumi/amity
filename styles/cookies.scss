@@ -18,9 +18,9 @@
 }
 
 .cookies__button {
-  background-color: $light;
-  color: $dark;
-  border: 0;
+  color: $light;
+  background-color: $dark;
+  border: 2px solid $light;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;

@@ -3,6 +3,10 @@
 .navbar {
   padding-top: 2rem;
   width: 100%;
+  background-color: $primary;
+}
+
+.navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,13 +24,14 @@
 }
 
 .amity__text {
-  color: $primary;
+  color: $light;
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   font-size: 28px;
 }
 
 .nav__link {
+  color: $light;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;

@@ -1,22 +1,36 @@
 @import './_variables.scss';
 
 .hero {
-  height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 25vh;
+  align-items: center;
+  padding-top: 20vh;
+  background-color: $primary;
+
+  .amity__button--inverted {
+    margin-right: 1rem;
+  }
 }
 
 .hero__title {
-  color: $primary;
-  font-size: 38px;
+  color: $light;
+  font-size: 42px;
   margin-bottom: 1rem;
 }
 
 .hero__details {
+  color: $light;
   font-size: 20px;
   text-align: justify;
   width: 40%;
+  font-weight: lighter;
   margin-bottom: 2rem;
+}
+
+.hero__tail {
+  margin-top: 5vh;
+  width: 100%;
+  height: 15vh;
+  background-color: $light;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
 }

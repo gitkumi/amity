@@ -2,7 +2,6 @@
 
 .amity__button {
   padding: 0.5rem 1rem;
-  border: 0;
   color: $light;
   border-radius: 8px;
   cursor: pointer;
@@ -14,8 +13,12 @@
 
   &.amity__button--inverted {
     border: 2px solid $primary;
-    margin-left: 0.5rem;
     color: $primary;
     background-color: $light;
+  }
+
+  &.amity__button--bordered {
+    border: 2px solid $light;
+    color: $light;
   }
 }

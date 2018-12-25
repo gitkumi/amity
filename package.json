@@ -30,9 +30,7 @@
     "sass-loader": "^7.1.0",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^3.1.14",
     "clean-webpack-plugin": "^1.0.0"
   }
 }
