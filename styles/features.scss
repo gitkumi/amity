@@ -8,10 +8,7 @@
 .feature {
   display: flex;
   justify-content: space-between;
-
-  &:not(:last-child) {
-    margin-bottom: 8rem;
-  }
+  margin-bottom: 8rem;
 
   &:nth-child(2) {
     flex-direction: row-reverse;

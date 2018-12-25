@@ -1,5 +1,68 @@
 @import './_variables.scss';
 
 .humans {
-  background-color: $primary;
+  background-color: $light-gray;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 6rem;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  &:not(:last-child) {
+    margin-right: 6rem;
+  }
+}
+
+.feedback__message {
+  margin-top: auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 14px;
+  border-radius: 2rem;
+  position: relative;
+  background-color: $light;
+}
+
+.feedback__message::after {
+	content: '';
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: $light;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+
+.human {
+  display: flex;
+}
+
+.human__image {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+}
+
+.human-profile {
+  margin-top: auto;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.human-profile__name {
+  font-weight: bold;
+}
+
+.human-profile__job {
+  color: $gray;
 }
