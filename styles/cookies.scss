@@ -1,0 +1,27 @@
+@import './_variables.scss';
+
+.cookies {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 10vw;
+  z-index: 100;
+}
+
+.cookies__message {
+  color: $light;
+  margin-right: 1rem;
+}
+
+.cookies__button {
+  background-color: $light;
+  color: $dark;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
