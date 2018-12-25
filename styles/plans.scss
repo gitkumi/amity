@@ -1,0 +1,17 @@
+@import './_variables.scss';
+
+.plans {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan {
+  height: 600px;
+  border: 2px solid $dark;
+  flex: 1;
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
