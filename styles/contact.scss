@@ -1,0 +1,37 @@
+@import './_variables.scss';
+
+.contact {
+  padding-top: 3rem;
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .amity__button {
+    margin-left: auto;
+  }
+}
+
+.contact-form__input {
+  background-color: $light;
+  height: 50px;
+  width: 100%;
+  color: $dark;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact__tail {
+  margin-top: 5vh;
+  width: 100%;
+  height: 15vh;
+  background-color: $light;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}

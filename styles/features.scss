@@ -3,12 +3,16 @@
 .features {
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
 }
 
 .feature {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8rem;
+
+  &:not(:last-child) {
+    margin-bottom: 8rem;
+  }
 
   &:nth-child(2) {
     flex-direction: row-reverse;
