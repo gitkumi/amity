@@ -5,3 +5,14 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+
+.customers__icons {
+  display: flex;
+  justify-content: space-evenly;
+
+  img {
+    height: 64px;
+    width: 64px;
+    opacity: 0.3;
+  }
+}
