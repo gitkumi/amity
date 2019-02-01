@@ -1,31 +1,55 @@
 @import './_variables.scss';
+@import './_media-queries.scss';
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20vh;
+  padding-top: 10vh;
   background-color: $primary;
 
   .amity__button--inverted {
     margin-right: 1rem;
   }
+
+  @media #{$medium-and-up} {
+    padding-top: 20vh;
+  }
 }
 
 .hero__title {
+  text-align: center;
   color: $light;
-  font-size: 42px;
+  font-size: 28px;
   margin-bottom: 1rem;
+  
+  @media #{$medium-and-up} {
+    font-size: 42px;
+  }
+
+  @media #{$small-and-down} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .hero__details {
   color: $light;
   font-size: 20px;
   text-align: justify;
-  width: 40%;
   font-weight: lighter;
   margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
+  width: 100%;
+
+  @media #{$medium-and-up} {
+    width: 40%;
+  }
+
+  @media #{$small-and-down} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .hero__tail {

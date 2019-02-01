@@ -9,7 +9,8 @@
 
 .feedback-container {
   display: flex;
-  justify-content: center;
+  overflow: auto;
+  padding-bottom: 2rem;
 }
 
 .feedback {
@@ -19,6 +20,11 @@
 
   &:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  @media #{$small-and-down} {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 

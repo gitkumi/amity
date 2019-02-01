@@ -9,7 +9,14 @@
 }
 
 .contact-form {
-  width: 350px;
+  width: 100%;
+  @media #{$medium-and-up} {
+    width: 350px;
+  }
+  @media #{$small-and-down} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;

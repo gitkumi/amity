@@ -4,6 +4,11 @@
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  @media #{$small-and-down} {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .customers__icons {
@@ -14,5 +19,10 @@
     height: 64px;
     width: 64px;
     opacity: 0.3;
+
+    @media #{$small-and-down} {
+      height: 48px;
+      width: 48px;
+    }
   }
 }

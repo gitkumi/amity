@@ -1,4 +1,5 @@
 @import './_variables.scss';
+@import './_media-queries.scss';
 
 .navbar {
   padding-top: 2rem;
@@ -30,10 +31,24 @@
   font-size: 28px;
 }
 
+.nav__link-container {
+  @media #{$small-and-down} {
+    display: none;
+  }
+}
+
 .nav__link {
   color: $light;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  margin-right: 3rem;
+
+  @media #{$medium-and-up} {
+    margin-right: 1rem;
+  }
+
+  @media #{$large-and-up} {
+    margin-right: 3rem;
+  }
 }
+
