@@ -15,6 +15,8 @@
   @media #{$medium-and-up} {
     padding-top: 20vh;
   }
+  
+  overflow: hidden;
 }
 
 .hero__title {
@@ -54,8 +56,9 @@
 
 .hero__tail {
   margin-top: 5vh;
-  width: 100%;
-  height: 15vh;
-  background-color: $light;
-  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15vh 0 0 100vw;
+  border-color: transparent transparent transparent $light;
 }

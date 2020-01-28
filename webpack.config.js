@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -32,10 +32,11 @@ module.exports = {
     ]
   },
   devServer: {
-    hot: true
+    compress: true,
+    port: 9000
   },
   plugins: [
-    new CleanWebpackPlugin(['dist', 'build/*.*']),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'index.css'
     }),

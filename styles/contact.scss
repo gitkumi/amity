@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .contact-form {
@@ -37,8 +38,9 @@
 
 .contact__tail {
   margin-top: 5vh;
-  width: 100%;
-  height: 15vh;
-  background-color: $light-gray;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 15vh 100vw;
+  border-color: transparent transparent $light-gray transparent;
 }
