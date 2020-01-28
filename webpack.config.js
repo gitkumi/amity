@@ -31,10 +31,11 @@ module.exports = {
       }
     ]
   },
-  devServer: {
-    compress: true,
-    port: 9000
-  },
+  // devServer: {
+  //   compress: true,
+  //   port: 9000,
+  //   writeToDisk: true
+  // },
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
